@@ -9,7 +9,7 @@ import com.hackfse.feedbackmanagement.Base.dao.Dao;
 import com.hackfse.feedbackmanagement.login.dataobject.Employee;
 
 /**
- *	
+ *
  * @author antony
  */
 public interface EmployeeDao extends Dao<Employee>{

@@ -39,7 +39,7 @@ public class PersistenceJPAConfig {
 		em.setDataSource(dataSource());
 		em.setPackagesToScan(new String[] { "com.hackfse.feedbackmanagement" });
 		em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());		
-		//em.setJpaProperties(additionalProperties());
+		em.setJpaProperties(additionalProperties());
 		return em;
 	}
 	
@@ -49,7 +49,7 @@ public class PersistenceJPAConfig {
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/testws");
 		dataSource.setUsername( "root" );
-		dataSource.setPassword( "pass@word1" );
+		dataSource.setPassword( "" );
 		return dataSource;
 	}
 	

@@ -22,6 +22,24 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "employee")
+@NamedQueries({
+    @NamedQuery(name = "Employee.findAll", query = "SELECT e FROM Employee e"),
+    @NamedQuery(name = "Employee.findById", query = "SELECT e FROM Employee e WHERE e.id = :id"),
+    @NamedQuery(name = "Employee.findByFirstName", query = "SELECT e FROM Employee e WHERE e.firstName = :firstName"),
+    @NamedQuery(name = "Employee.findByLastName", query = "SELECT e FROM Employee e WHERE e.lastName = :lastName"),
+    @NamedQuery(name = "Employee.findByCompany", query = "SELECT e FROM Employee e WHERE e.company = :company"),
+    @NamedQuery(name = "Employee.findByJobTitle", query = "SELECT e FROM Employee e WHERE e.jobTitle = :jobTitle"),
+    @NamedQuery(name = "Employee.findByBusinessPhone", query = "SELECT e FROM Employee e WHERE e.businessPhone = :businessPhone"),
+    @NamedQuery(name = "Employee.findByHomePhone", query = "SELECT e FROM Employee e WHERE e.homePhone = :homePhone"),
+    @NamedQuery(name = "Employee.findByMobilePhone", query = "SELECT e FROM Employee e WHERE e.mobilePhone = :mobilePhone"),
+    @NamedQuery(name = "Employee.findByFaxNumber", query = "SELECT e FROM Employee e WHERE e.faxNumber = :faxNumber"),
+    @NamedQuery(name = "Employee.findByStreet", query = "SELECT e FROM Employee e WHERE e.street = :street"),
+    @NamedQuery(name = "Employee.findByCity", query = "SELECT e FROM Employee e WHERE e.city = :city"),
+    @NamedQuery(name = "Employee.findByState", query = "SELECT e FROM Employee e WHERE e.state = :state"),
+    @NamedQuery(name = "Employee.findByCountry", query = "SELECT e FROM Employee e WHERE e.country = :country"),
+    @NamedQuery(name = "Employee.findByEmail", query = "SELECT e FROM Employee e WHERE e.email = :email"),
+    @NamedQuery(name = "Employee.findByWebPage", query = "SELECT e FROM Employee e WHERE e.webPage = :webPage"),
+    @NamedQuery(name = "Employee.findByNotes", query = "SELECT e FROM Employee e WHERE e.notes = :notes")})
 public class Employee implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -17,7 +17,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(scanBasePackages="com.hackfse.feedbackmanagement")
 @EnableWebSecurity
-@EnableJpaRepositories(basePackages="com.hackfse.feedbackmanagement.Base.repository")
 @ComponentScan(basePackages={"com.hackfse.feedbackmanagement"})
 public class FeedbackmanagementApplication extends SpringBootServletInitializer {
 

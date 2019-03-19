@@ -12,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 public class FeedbackmanagementApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		System.out.println("TEst12 345>>>>>>>>");
+		System.out.println("TEst12 345ggg>>>>>>>>");
 		SpringApplication.run(FeedbackmanagementApplication.class, args);
 	}
 	

@@ -128,7 +128,7 @@ public class Users implements Serializable {
 
     @Override
     public String toString() {
-        return "com.defiance.ideal.Users[ id=" + id + " ]";
+        return "com.hackfse.feedbackmanagement.login.dataobject.Users[ id=" + id + " ]";
     }
     
 }

@@ -4,9 +4,9 @@
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <!-- In a single module web application, no need to specify classes. Classes 
 			will be autodiscovered based on @Entity annotation -->
-    <class>com.antony.springrestws.login.dataobject.Users</class>
-    <class>com.antony.springrestws.login.dataobject.UserRoles</class>
-    <properties>
+    <class>com.hackfse.feedbackmanagement.login.dataobject.Users</class>
+    <class>com.hackfse.feedbackmanagement.login.dataobject.UserRoles</class>
+        <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
       <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
       <property name="hibernate.connection.username" value="root"/>

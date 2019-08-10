@@ -102,7 +102,7 @@ public class UserRoles implements Serializable,GrantedAuthority {
 
     @Override
     public String toString() {
-        return "com.defiance.ideal.UserRoles[ userRoleId=" + userRoleId + " ]";
+        return "com.hackfse.feedbackmanagement.login.dataobject.UserRoles[ userRoleId=" + userRoleId + " ]";
     }
 
     @Override
